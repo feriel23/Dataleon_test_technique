@@ -11,14 +11,14 @@ Ensure you have Python 3 installed on your system.
 
 ##### Step 1 : Installation
 To set up the environment and install all the required packages, run the following command in your bash shell:
-make install
+    - make install
 
 ##### Step 2: Running Tests
 To run the tests and validate the functionality of the DocumentTableDetector class, use:
-make test
+    - make test
 ##### Running All
 To install the requirements and run the tests consecutively, use:
-make all
+    - make all
 
 
 ### Pytest Scripts
