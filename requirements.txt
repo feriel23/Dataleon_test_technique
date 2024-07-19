@@ -1,0 +1,6 @@
+transformers==4.42.4
+torch==2.3.1
+Pillow==10.4.0
+requests==2.32.2
+pytest==8.2.2
+timm==1.0.7
