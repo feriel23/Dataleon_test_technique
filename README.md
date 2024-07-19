@@ -14,18 +14,20 @@ To set up the environment and install all the required packages, run the followi
 
 ```bash
 make install
+```bash
 
 ##### Step 2: Running Tests
 To run the tests and validate the functionality of the DocumentTableDetector class, use:
 
+```bash
 make test
+```
 ##### Running All
 
 To install the requirements and run the tests consecutively, use:
-
-
+```bash
 make all
-
+```
 
 ### Pytest Scripts
 The project includes pytest scripts that cover the following scenarios:
@@ -48,7 +50,6 @@ By following the instructions provided in this README.md, you should be able to 
 
 
 ### Project Structure
-
 ```bash
 project_root/
 ├── notebooks/
@@ -67,3 +68,4 @@ project_root/
 ├── requirements.txt                   # Required packages
 ├── Makefile                           # Makefile for installing requirements and running tests
 └── README.md                          # Project README file
+```
