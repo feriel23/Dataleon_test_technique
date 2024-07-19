@@ -14,7 +14,7 @@ To set up the environment and install all the required packages, run the followi
 
 ```bash
 make install
-```bash
+```
 
 ##### Step 2: Running Tests
 To run the tests and validate the functionality of the DocumentTableDetector class, use:
