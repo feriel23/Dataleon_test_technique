@@ -3,7 +3,8 @@ import torch
 from PIL import Image, ImageDraw, ImageFont
 import requests
 from io import BytesIO
-
+import imghdr
+import mimetypes
 
 class DocumentTableDetector:
     def __init__(self):
@@ -26,6 +27,16 @@ class DocumentTableDetector:
             
     def predict(self, image_path):
         """Predict tables in an image."""
+        # Check the image format using imghdr and mimetypes
+        file_type = imghdr.what(image_path)
+        mime_type, _ = mimetypes.guess_type(image_path)
+
+        print(f"Detected file type: {file_type}")
+        print(f"Detected MIME type: {mime_type}")
+
+        if file_type not in ['jpeg', 'png', 'jpg'] and mime_type not in ['image/jpeg', 'image/png']:
+            raise ValueError("Unsupported file format")
+
         try:
                 image = self.load_image(image_path)
                 inputs = self.processor(images=image, return_tensors="pt")

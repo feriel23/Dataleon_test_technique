@@ -1,0 +1,7 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]  # Excludes .pyc, .pyo, and .pyd files
+*$py.class
+
+# Pytest cache directory
+.pytest_cache/
