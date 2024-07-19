@@ -18,13 +18,12 @@ make install
 ##### Step 2: Running Tests
 To run the tests and validate the functionality of the DocumentTableDetector class, use:
 
-```bash
 make test
 ##### Running All
 
 To install the requirements and run the tests consecutively, use:
 
-```bash
+
 make all
 
 
@@ -49,6 +48,8 @@ By following the instructions provided in this README.md, you should be able to 
 
 
 ### Project Structure
+
+```bash
 project_root/
 ├── notebooks/
 │   └── Table_detection.ipynb          # Notebook that tests model output on a single sample
